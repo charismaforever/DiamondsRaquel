@@ -1,19 +1,153 @@
-<p>&lt;!DOCTYPE html&gt;<br />&lt;html lang="en"&gt;<br />&lt;head&gt;<br /> &lt;meta charset="UTF-8"&gt;<br /> &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br /> &lt;title&gt;Diamond Engagement Rings - Raquel Roche Fine Jewelry&lt;/title&gt;<br /> &lt;meta name="description" content="Discover exquisite diamond engagement rings crafted with timeless elegance. Lab-grown and natural diamonds set in 14K and 18K gold."&gt;<br /> &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;<br /> &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;<br /> &lt;link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&amp;family=Montserrat:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"&gt;<br /> &lt;style&gt;<br /> * {<br /> margin: 0;<br /> padding: 0;<br /> box-sizing: border-box;<br /> }</p>
-<p>:root {<br /> --black: #0a0a0a;<br /> --rich-black: #1a1a1a;<br /> --charcoal: #2d2d2d;<br /> --gold: #d4af37;<br /> --light-gold: #f4e4c1;<br /> --rose-gold: #b76e79;<br /> --white: #ffffff;<br /> --cream: #faf8f3;<br /> }</p>
-<p>body {<br /> font-family: 'Montserrat', sans-serif;<br /> background-color: var(--black);<br /> color: var(--white);<br /> overflow-x: hidden;<br /> }</p>
-<p>h1, h2, h3, h4, h5, h6 {<br /> font-family: 'Cormorant Garamond', serif;<br /> font-weight: 400;<br /> }</p>
-<p>/* Hero Section */<br /> .hero {<br /> position: relative;<br /> height: 100vh;<br /> display: flex;<br /> align-items: center;<br /> justify-content: center;<br /> overflow: hidden;<br /> background: linear-gradient(135deg, var(--black) 0%, var(--rich-black) 50%, var(--charcoal) 100%);<br /> }</p>
-<p>.hero::before {<br /> content: '';<br /> position: absolute;<br /> width: 600px;<br /> height: 600px;<br /> background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);<br /> top: -200px;<br /> right: -200px;<br /> animation: pulse 8s ease-in-out infinite;<br /> }</p>
-<p>.hero::after {<br /> content: '';<br /> position: absolute;<br /> width: 400px;<br /> height: 400px;<br /> background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);<br /> bottom: -100px;<br /> left: -100px;<br /> animation: pulse 6s ease-in-out infinite;<br /> }</p>
-<p>@keyframes pulse {<br /> 0%, 100% { transform: scale(1); opacity: 0.5; }<br /> 50% { transform: scale(1.1); opacity: 0.8; }<br /> }</p>
-<p>.hero-content {<br /> text-align: center;<br /> z-index: 10;<br /> max-width: 1200px;<br /> padding: 0 2rem;<br /> }</p>
-<p>.hero h1 {<br /> font-size: clamp(3rem, 8vw, 7rem);<br /> font-weight: 300;<br /> letter-spacing: 0.02em;<br /> margin-bottom: 1.5rem;<br /> background: linear-gradient(135deg, var(--light-gold) 0%, var(--gold) 50%, var(--light-gold) 100%);<br /> -webkit-background-clip: text;<br /> -webkit-text-fill-color: transparent;<br /> background-clip: text;<br /> background-size: 200% 200%;<br /> animation: shimmer 3s ease-in-out infinite;<br /> }</p>
-<p>@keyframes shimmer {<br /> 0%, 100% { background-position: 0% 50%; }<br /> 50% { background-position: 100% 50%; }<br /> }</p>
-<p>.hero-subtitle {<br /> font-size: clamp(1.2rem, 3vw, 2rem);<br /> font-weight: 300;<br /> color: var(--light-gold);<br /> margin-bottom: 3rem;<br /> letter-spacing: 0.15em;<br /> text-transform: uppercase;<br /> }</p>
-<p>.hero-cta {<br /> display: inline-block;<br /> padding: 1.2rem 3rem;<br /> background: linear-gradient(135deg, var(--gold) 0%, #c9a959 100%);<br /> color: var(--black);<br /> text-decoration: none;<br /> font-weight: 600;<br /> letter-spacing: 0.1em;<br /> text-transform: uppercase;<br /> border-radius: 50px;<br /> transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);<br /> box-shadow: 0 10px 30px rgba(212, 175, 55, 0.3);<br /> position: relative;<br /> overflow: hidden;<br /> }</p>
-<p>.hero-cta::before {<br /> content: '';<br /> position: absolute;<br /> top: 0;<br /> left: -100%;<br /> width: 100%;<br /> height: 100%;<br /> background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);<br /> transition: left 0.5s;<br /> }</p>
-<p>.hero-cta:hover::before {<br /> left: 100%;<br /> }</p>
-<p>.hero-cta:hover {<br /> transform: translateY(-2px);<br /> box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);<br /> }</p>
-<p>.scroll-indicator {<br /> position: absolute;<br /> bottom: 3rem;<br /> left: 50%;<br /> transform: translateX(-50%);<br /> width: 2px;<br /> height: 60px;<br /> background: linear-gradient(to bottom, var(--gold), transparent);<br /> animation: scroll 2s ease-in-out infinite;<br /> }</p>
-<p>@keyframes scroll {<br /> 0%, 100% { transform: translateX(-50%) translateY(0); opacity: 1; }<br /> 50% { transform: translateX(-50%) translateY(20px); opacity: 0.5; }<br /> }</p>
-<p>/* Navigation */<br /> nav {<br /> position: fixed;<br /> top: 0;<br /> left: 0;<br /> right: 0;<br /> padding: 1.5rem 3rem;<br /> display: flex;<br /> justify-content: space-between;<br /> align-items: center;<br /> z-index: 1000;<br /> background: linear-gradient(to bottom, rgba(10, 10, 10, 0.95), transparent);<br /> backdrop-filter: blur(10px);</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diamond Engagement Rings - Raquel Roche Fine Jewelry</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Montserrat',sans-serif;background:#0a0a0a;color:#fff}
+h1,h2,h3{font-family:'Cormorant Garamond',serif}
+.hero{height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0a0a0a,#1a1a1a,#2d2d2d);text-align:center}
+.hero h1{font-size:5rem;background:linear-gradient(135deg,#f4e4c1,#d4af37,#f4e4c1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1rem}
+.hero-subtitle{font-size:1.5rem;color:#f4e4c1;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:2rem}
+.hero-cta{display:inline-block;padding:1rem 2.5rem;background:linear-gradient(135deg,#d4af37,#c9a959);color:#0a0a0a;text-decoration:none;font-weight:600;border-radius:50px;text-transform:uppercase}
+nav{position:fixed;top:0;width:100%;padding:1.5rem 3rem;display:flex;justify-content:space-between;z-index:1000;background:rgba(10,10,10,0.95)}
+.logo{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:#d4af37;text-decoration:none}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:#f4e4c1;text-decoration:none;text-transform:uppercase;font-size:0.9rem}
+.collection{padding:8rem 3rem}
+.section-title{font-size:3rem;color:#d4af37;text-align:center;margin-bottom:1rem}
+.section-subtitle{color:#f4e4c1;text-align:center;margin-bottom:4rem}
+.collection-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:3rem;max-width:1400px;margin:0 auto}
+.ring-card{background:linear-gradient(135deg,#1a1a1a,#2d2d2d);border-radius:20px;border:1px solid rgba(212,175,55,0.1);overflow:hidden;transition:transform 0.3s}
+.ring-card:hover{transform:translateY(-10px)}
+.ring-image{width:100%;aspect-ratio:1;background:#1a1a1a;display:flex;align-items:center;justify-content:center}
+.ring-image svg{width:200px;height:200px}
+.ring-info{padding:2rem}
+.ring-name{font-size:1.8rem;color:#f4e4c1;margin-bottom:0.5rem}
+.ring-details{color:rgba(255,255,255,0.7);margin-bottom:1.5rem}
+.ring-price{font-size:1.5rem;color:#d4af37;margin-bottom:1.5rem}
+.ring-cta{display:inline-block;padding:0.8rem 2rem;background:transparent;color:#d4af37;border:2px solid #d4af37;text-decoration:none;text-transform:uppercase;border-radius:50px}
+.ring-cta:hover{background:#d4af37;color:#0a0a0a}
+footer{background:#0a0a0a;padding:3rem;text-align:center;color:rgba(255,255,255,0.5);border-top:1px solid rgba(212,175,55,0.2)}
+footer a{color:#d4af37;text-decoration:none}
+@media(max-width:768px){.hero h1{font-size:3rem}.nav-links{display:none}.collection-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+<a href="https://raquelroche.com" class="logo">RAQUEL ROCHE</a>
+<ul class="nav-links">
+<li><a href="#collection">Collection</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<section class="hero">
+<div>
+<h1>Eternal Elegance</h1>
+<p class="hero-subtitle">Diamond Engagement Rings</p>
+<a href="#collection" class="hero-cta">Explore Collection</a>
+</div>
+</section>
+<section id="collection" class="collection">
+<h2 class="section-title">The Collection</h2>
+<p class="section-subtitle">Timeless designs, exceptional craftsmanship</p>
+<div class="collection-grid">
+<div class="ring-card">
+<div class="ring-image">
+<svg viewBox="0 0 200 200" fill="none">
+<circle cx="100" cy="100" r="80" stroke="#d4af37" stroke-width="2"/>
+<circle cx="100" cy="60" r="20" fill="#ffffff" opacity="0.8"/>
+</svg>
+</div>
+<div class="ring-info">
+<h3 class="ring-name">The Aurora</h3>
+<p class="ring-details">2.0ct lab-grown diamond • 18K gold • Classic solitaire</p>
+<p class="ring-price">From $4,500</p>
+<a href="#" class="ring-cta">View Details</a>
+</div>
+</div>
+<div class="ring-card">
+<div class="ring-image">
+<svg viewBox="0 0 200 200" fill="none">
+<circle cx="100" cy="100" r="80" stroke="#d4af37" stroke-width="2"/>
+<circle cx="100" cy="60" r="20" fill="#ffffff" opacity="0.8"/>
+<circle cx="75" cy="70" r="8" fill="#ffffff" opacity="0.6"/>
+<circle cx="125" cy="70" r="8" fill="#ffffff" opacity="0.6"/>
+</svg>
+</div>
+<div class="ring-info">
+<h3 class="ring-name">The Celestial</h3>
+<p class="ring-details">1.5ct center diamond • Pavé halo • 14K rose gold</p>
+<p class="ring-price">From $6,200</p>
+<a href="#" class="ring-cta">View Details</a>
+</div>
+</div>
+<div class="ring-card">
+<div class="ring-image">
+<svg viewBox="0 0 200 200" fill="none">
+<circle cx="100" cy="100" r="80" stroke="#d4af37" stroke-width="2"/>
+<rect x="80" y="40" width="40" height="40" fill="#ffffff" opacity="0.8" transform="rotate(45 100 60)"/>
+</svg>
+</div>
+<div class="ring-info">
+<h3 class="ring-name">The Radiance</h3>
+<p class="ring-details">2.5ct emerald cut • Three-stone setting • Platinum</p>
+<p class="ring-price">From $8,900</p>
+<a href="#" class="ring-cta">View Details</a>
+</div>
+</div>
+<div class="ring-card">
+<div class="ring-image">
+<svg viewBox="0 0 200 200" fill="none">
+<circle cx="100" cy="100" r="80" stroke="#d4af37" stroke-width="2"/>
+<circle cx="100" cy="60" r="18" fill="#ffffff" opacity="0.8"/>
+<circle cx="70" cy="80" r="6" fill="#ffffff" opacity="0.6"/>
+<circle cx="130" cy="80" r="6" fill="#ffffff" opacity="0.6"/>
+</svg>
+</div>
+<div class="ring-info">
+<h3 class="ring-name">The Empress</h3>
+<p class="ring-details">1.8ct oval diamond • Vintage-inspired • 18K yellow gold</p>
+<p class="ring-price">From $7,500</p>
+<a href="#" class="ring-cta">View Details</a>
+</div>
+</div>
+<div class="ring-card">
+<div class="ring-image">
+<svg viewBox="0 0 200 200" fill="none">
+<circle cx="100" cy="100" r="80" stroke="#d4af37" stroke-width="2"/>
+<polygon points="100,40 110,70 140,70 115,90 125,120 100,100 75,120 85,90 60,70 90,70" fill="#ffffff" opacity="0.8"/>
+</svg>
+</div>
+<div class="ring-info">
+<h3 class="ring-name">The Lumière</h3>
+<p class="ring-details">3.0ct round brilliant • Split shank • 14K white gold</p>
+<p class="ring-price">From $9,800</p>
+<a href="#" class="ring-cta">View Details</a>
+</div>
+</div>
+<div class="ring-card">
+<div class="ring-image">
+<svg viewBox="0 0 200 200" fill="none">
+<circle cx="100" cy="100" r="80" stroke="#d4af37" stroke-width="2"/>
+<circle cx="100" cy="60" r="22" fill="#ffffff" opacity="0.8"/>
+</svg>
+</div>
+<div class="ring-info">
+<h3 class="ring-name">The Serenity</h3>
+<p class="ring-details">1.2ct cushion cut • Bezel setting • 18K rose gold</p>
+<p class="ring-price">From $5,400</p>
+<a href="#" class="ring-cta">View Details</a>
+</div>
+</div>
+</div>
+</section>
+<footer id="contact">
+<p>&copy; 2026 Raquel Roche Fine Jewelry. All rights reserved.</p>
+<p><a href="mailto:concierge@raquelroche.com">concierge@raquelroche.com</a></p>
+</footer>
+</body>
+</html>
