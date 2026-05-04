@@ -1,153 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diamond Engagement Rings - Raquel Roche Fine Jewelry</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Montserrat',sans-serif;background:#0a0a0a;color:#fff}
-h1,h2,h3{font-family:'Cormorant Garamond',serif}
-.hero{height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#0a0a0a,#1a1a1a,#2d2d2d);text-align:center}
-.hero h1{font-size:5rem;background:linear-gradient(135deg,#f4e4c1,#d4af37,#f4e4c1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1rem}
-.hero-subtitle{font-size:1.5rem;color:#f4e4c1;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:2rem}
-.hero-cta{display:inline-block;padding:1rem 2.5rem;background:linear-gradient(135deg,#d4af37,#c9a959);color:#0a0a0a;text-decoration:none;font-weight:600;border-radius:50px;text-transform:uppercase}
-nav{position:fixed;top:0;width:100%;padding:1.5rem 3rem;display:flex;justify-content:space-between;z-index:1000;background:rgba(10,10,10,0.95)}
-.logo{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:#d4af37;text-decoration:none}
-.nav-links{display:flex;gap:2rem;list-style:none}
-.nav-links a{color:#f4e4c1;text-decoration:none;text-transform:uppercase;font-size:0.9rem}
-.collection{padding:8rem 3rem}
-.section-title{font-size:3rem;color:#d4af37;text-align:center;margin-bottom:1rem}
-.section-subtitle{color:#f4e4c1;text-align:center;margin-bottom:4rem}
-.collection-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(350px,1fr));gap:3rem;max-width:1400px;margin:0 auto}
-.ring-card{background:linear-gradient(135deg,#1a1a1a,#2d2d2d);border-radius:20px;border:1px solid rgba(212,175,55,0.1);overflow:hidden;transition:transform 0.3s}
-.ring-card:hover{transform:translateY(-10px)}
-.ring-image{width:100%;aspect-ratio:1;background:#1a1a1a;display:flex;align-items:center;justify-content:center}
-.ring-image svg{width:200px;height:200px}
-.ring-info{padding:2rem}
-.ring-name{font-size:1.8rem;color:#f4e4c1;margin-bottom:0.5rem}
-.ring-details{color:rgba(255,255,255,0.7);margin-bottom:1.5rem}
-.ring-price{font-size:1.5rem;color:#d4af37;margin-bottom:1.5rem}
-.ring-cta{display:inline-block;padding:0.8rem 2rem;background:transparent;color:#d4af37;border:2px solid #d4af37;text-decoration:none;text-transform:uppercase;border-radius:50px}
-.ring-cta:hover{background:#d4af37;color:#0a0a0a}
-footer{background:#0a0a0a;padding:3rem;text-align:center;color:rgba(255,255,255,0.5);border-top:1px solid rgba(212,175,55,0.2)}
-footer a{color:#d4af37;text-decoration:none}
-@media(max-width:768px){.hero h1{font-size:3rem}.nav-links{display:none}.collection-grid{grid-template-columns:1fr}}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Raquel Roche Diamonds — Fine diamond jewelry, engagement rings, and gold pieces for life's most important moments." />
+  <title>Raquel Roche Diamonds | Fine Diamond Jewelry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="canonical" href="https://diamonds.raquelroche.com/" />
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    :root{--gold:#c9a96e;--ivory:#f5f0e8;--mist:#a09080;--black:#0a0906;}
+    body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--black);color:var(--ivory);line-height:1.6;}
+    a{color:inherit;text-decoration:none;}
+
+    header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,9,6,0.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(201,169,110,0.1);}
+    nav{max-width:1200px;margin:0 auto;padding:0 2rem;height:64px;display:flex;align-items:center;justify-content:space-between;}
+    .logo{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;letter-spacing:0.06em;}
+    .nav-links{display:flex;gap:2rem;font-size:0.6rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(245,240,232,0.6);}
+    .nav-links a:hover{color:var(--gold);}
+
+    .hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;}
+    .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 40%,rgba(201,169,110,0.07) 0%,transparent 60%);}
+    .hero-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(201,169,110,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(201,169,110,0.03) 1px,transparent 1px);background-size:80px 80px;}
+    .hero-content{position:relative;z-index:2;padding:2rem;}
+    .eyebrow{font-size:0.6rem;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;}
+    h1{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,8vw,7rem);font-weight:300;line-height:1;margin-bottom:1.5rem;}
+    h1 em{color:var(--gold);font-style:italic;}
+    .hero-sub{font-size:1.05rem;color:var(--mist);max-width:480px;margin:0 auto 3rem;line-height:1.85;}
+    .hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+    .btn{display:inline-block;padding:14px 36px;font-size:0.65rem;letter-spacing:0.18em;text-transform:uppercase;font-weight:600;transition:all 0.25s;}
+    .btn-gold{background:var(--gold);color:var(--black);}
+    .btn-gold:hover{background:#d4b87a;}
+    .btn-outline{border:1px solid rgba(201,169,110,0.4);color:var(--gold);}
+    .btn-outline:hover{background:var(--gold);color:var(--black);}
+
+    .section{padding:6rem 2rem;}
+    .container{max-width:1100px;margin:0 auto;}
+    .section-label{font-size:0.6rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem;}
+    h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;margin-bottom:3rem;}
+
+    .features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(201,169,110,0.08);}
+    .feature{background:var(--black);padding:3rem 2.5rem;}
+    .feature-num{font-family:'Cormorant Garamond',serif;font-size:3rem;font-weight:300;color:rgba(201,169,110,0.2);margin-bottom:1rem;}
+    .feature h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;color:var(--ivory);margin-bottom:0.75rem;}
+    .feature p{font-size:0.875rem;color:var(--mist);line-height:1.85;}
+
+    .cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(201,169,110,0.08);}
+    .cat-card{background:var(--black);padding:2.5rem;display:block;transition:background 0.2s;}
+    .cat-card:hover{background:#111009;}
+    .cat-count{font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:0.5rem;}
+    .cat-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;color:var(--ivory);margin-bottom:0.5rem;}
+    .cat-cta{font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(201,169,110,0.6);}
+
+    .cta-band{border-top:1px solid rgba(201,169,110,0.1);border-bottom:1px solid rgba(201,169,110,0.1);padding:6rem 2rem;text-align:center;background:rgba(201,169,110,0.03);}
+    .cta-band h2{margin-bottom:1rem;}
+    .cta-band p{color:var(--mist);margin-bottom:2.5rem;font-size:1rem;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.85;}
+
+    footer{border-top:1px solid rgba(201,169,110,0.1);padding:3rem 2rem;text-align:center;}
+    footer p{font-size:0.78rem;color:rgba(245,240,232,0.3);margin-bottom:0.4rem;}
+    footer a{color:var(--gold);}
+
+    @media(max-width:768px){
+      .features-grid,.cats-grid{grid-template-columns:1fr;}
+      .hero-actions{flex-direction:column;align-items:center;}
+    }
+  </style>
 </head>
 <body>
-<nav>
-<a href="https://raquelroche.com" class="logo">RAQUEL ROCHE</a>
-<ul class="nav-links">
-<li><a href="#collection">Collection</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-<section class="hero">
-<div>
-<h1>Eternal Elegance</h1>
-<p class="hero-subtitle">Diamond Engagement Rings</p>
-<a href="#collection" class="hero-cta">Explore Collection</a>
-</div>
-</section>
-<section id="collection" class="collection">
-<h2 class="section-title">The Collection</h2>
-<p class="section-subtitle">Timeless designs, exceptional craftsmanship</p>
-<div class="collection-grid">
-<div class="ring-card">
-<div class="ring-image">
-<svg viewBox="0 0 200 200" fill="none">
-<circle cx="100" cy="100" r="80" stroke="#d4af37" stroke-width="2"/>
-<circle cx="100" cy="60" r="20" fill="#ffffff" opacity="0.8"/>
-</svg>
-</div>
-<div class="ring-info">
-<h3 class="ring-name">The Aurora</h3>
-<p class="ring-details">2.0ct lab-grown diamond • 18K gold • Classic solitaire</p>
-<p class="ring-price">From $4,500</p>
-<a href="#" class="ring-cta">View Details</a>
-</div>
-</div>
-<div class="ring-card">
-<div class="ring-image">
-<svg viewBox="0 0 200 200" fill="none">
-<circle cx="100" cy="100" r="80" stroke="#d4af37" stroke-width="2"/>
-<circle cx="100" cy="60" r="20" fill="#ffffff" opacity="0.8"/>
-<circle cx="75" cy="70" r="8" fill="#ffffff" opacity="0.6"/>
-<circle cx="125" cy="70" r="8" fill="#ffffff" opacity="0.6"/>
-</svg>
-</div>
-<div class="ring-info">
-<h3 class="ring-name">The Celestial</h3>
-<p class="ring-details">1.5ct center diamond • Pavé halo • 14K rose gold</p>
-<p class="ring-price">From $6,200</p>
-<a href="#" class="ring-cta">View Details</a>
-</div>
-</div>
-<div class="ring-card">
-<div class="ring-image">
-<svg viewBox="0 0 200 200" fill="none">
-<circle cx="100" cy="100" r="80" stroke="#d4af37" stroke-width="2"/>
-<rect x="80" y="40" width="40" height="40" fill="#ffffff" opacity="0.8" transform="rotate(45 100 60)"/>
-</svg>
-</div>
-<div class="ring-info">
-<h3 class="ring-name">The Radiance</h3>
-<p class="ring-details">2.5ct emerald cut • Three-stone setting • Platinum</p>
-<p class="ring-price">From $8,900</p>
-<a href="#" class="ring-cta">View Details</a>
-</div>
-</div>
-<div class="ring-card">
-<div class="ring-image">
-<svg viewBox="0 0 200 200" fill="none">
-<circle cx="100" cy="100" r="80" stroke="#d4af37" stroke-width="2"/>
-<circle cx="100" cy="60" r="18" fill="#ffffff" opacity="0.8"/>
-<circle cx="70" cy="80" r="6" fill="#ffffff" opacity="0.6"/>
-<circle cx="130" cy="80" r="6" fill="#ffffff" opacity="0.6"/>
-</svg>
-</div>
-<div class="ring-info">
-<h3 class="ring-name">The Empress</h3>
-<p class="ring-details">1.8ct oval diamond • Vintage-inspired • 18K yellow gold</p>
-<p class="ring-price">From $7,500</p>
-<a href="#" class="ring-cta">View Details</a>
-</div>
-</div>
-<div class="ring-card">
-<div class="ring-image">
-<svg viewBox="0 0 200 200" fill="none">
-<circle cx="100" cy="100" r="80" stroke="#d4af37" stroke-width="2"/>
-<polygon points="100,40 110,70 140,70 115,90 125,120 100,100 75,120 85,90 60,70 90,70" fill="#ffffff" opacity="0.8"/>
-</svg>
-</div>
-<div class="ring-info">
-<h3 class="ring-name">The Lumière</h3>
-<p class="ring-details">3.0ct round brilliant • Split shank • 14K white gold</p>
-<p class="ring-price">From $9,800</p>
-<a href="#" class="ring-cta">View Details</a>
-</div>
-</div>
-<div class="ring-card">
-<div class="ring-image">
-<svg viewBox="0 0 200 200" fill="none">
-<circle cx="100" cy="100" r="80" stroke="#d4af37" stroke-width="2"/>
-<circle cx="100" cy="60" r="22" fill="#ffffff" opacity="0.8"/>
-</svg>
-</div>
-<div class="ring-info">
-<h3 class="ring-name">The Serenity</h3>
-<p class="ring-details">1.2ct cushion cut • Bezel setting • 18K rose gold</p>
-<p class="ring-price">From $5,400</p>
-<a href="#" class="ring-cta">View Details</a>
-</div>
-</div>
-</div>
-</section>
-<footer id="contact">
-<p>&copy; 2026 Raquel Roche Fine Jewelry. All rights reserved.</p>
-<p><a href="mailto:concierge@raquelroche.com">concierge@raquelroche.com</a></p>
-</footer>
+  <header>
+    <nav>
+      <a href="/" class="logo">Raquel Roche Diamonds</a>
+      <div class="nav-links">
+        <a href="https://gems-raquel-roche.pages.dev/shop">Shop All</a>
+        <a href="https://gems-raquel-roche.pages.dev/shop?category=engagement-rings">Engagement</a>
+        <a href="https://gems-raquel-roche.pages.dev/shop?category=gold">Gold</a>
+        <a href="https://gems-raquel-roche.pages.dev/journal">Journal</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-lines"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Raquel Roche Diamonds</p>
+      <h1>The diamond<br/><em>standard.</em></h1>
+      <p class="hero-sub">Fine diamond jewelry crafted in solid gold. Engagement rings, necklaces, bracelets, and earrings — over 1,800 pieces in stock and ready to ship.</p>
+      <div class="hero-actions">
+        <a href="https://gems-raquel-roche.pages.dev/shop" class="btn btn-gold">Shop All Jewelry</a>
+        <a href="https://gems-raquel-roche.pages.dev/shop?category=engagement-rings" class="btn btn-outline">Engagement Rings</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature">
+          <div class="feature-num">01</div>
+          <h3>Solid Gold, Always</h3>
+          <p>Every piece crafted in 10K, 14K, or 18K solid gold — never plated, never gold-filled, never compromised.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-num">02</div>
+          <h3>Conflict-Free Diamonds</h3>
+          <p>All diamonds are ethically sourced from certified suppliers. GIA and EGL certified stones available throughout the collection.</p>
+        </div>
+        <div class="feature">
+          <div class="feature-num">03</div>
+          <h3>Fully Insured Shipping</h3>
+          <p>Every order ships fully insured for its retail value. Overnight, 2nd Day Air, and standard options available.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="section-label">Browse the Collection</div>
+      <h2>What are you looking for?</h2>
+      <div class="cats-grid">
+        <a href="https://gems-raquel-roche.pages.dev/shop?category=engagement-rings" class="cat-card">
+          <div class="cat-count">355+ styles</div>
+          <div class="cat-title">Engagement Rings</div>
+          <div class="cat-cta">Shop Now →</div>
+        </a>
+        <a href="https://gems-raquel-roche.pages.dev/shop?category=necklaces" class="cat-card">
+          <div class="cat-count">520+ styles</div>
+          <div class="cat-title">Necklaces &amp; Chains</div>
+          <div class="cat-cta">Shop Now →</div>
+        </a>
+        <a href="https://gems-raquel-roche.pages.dev/shop?category=bracelets" class="cat-card">
+          <div class="cat-count">637+ styles</div>
+          <div class="cat-title">Bracelets</div>
+          <div class="cat-cta">Shop Now →</div>
+        </a>
+        <a href="https://gems-raquel-roche.pages.dev/shop?category=earrings" class="cat-card">
+          <div class="cat-count">38+ styles</div>
+          <div class="cat-title">Diamond Earrings</div>
+          <div class="cat-cta">Shop Now →</div>
+        </a>
+        <a href="https://gems-raquel-roche.pages.dev/shop?category=bangles" class="cat-card">
+          <div class="cat-count">107+ styles</div>
+          <div class="cat-title">Bangles</div>
+          <div class="cat-cta">Shop Now →</div>
+        </a>
+        <a href="https://gems-raquel-roche.pages.dev/shop?category=pendants" class="cat-card">
+          <div class="cat-count">156+ styles</div>
+          <div class="cat-title">Pendants</div>
+          <div class="cat-cta">Shop Now →</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="section-label">The Raquel Roche Journal</div>
+    <h2 style="max-width:540px;margin:0 auto 1rem;">The diamond education<br/>they never gave you.</h2>
+    <p>Cut grades, fluorescence, eye-clean clarity — everything you need to buy a diamond with complete confidence and zero regret.</p>
+    <a href="https://gems-raquel-roche.pages.dev/journal" class="btn btn-gold">Read the Journal</a>
+  </section>
+
+  <footer>
+    <p>
+      &copy; 2025 Raquel Roche Boutique &nbsp;&middot;&nbsp;
+      <a href="https://gems-raquel-roche.pages.dev/privacy-policy">Privacy Policy</a> &nbsp;&middot;&nbsp;
+      <a href="https://gems-raquel-roche.pages.dev/terms">Terms &amp; Conditions</a> &nbsp;&middot;&nbsp;
+      <a href="https://gems-raquel-roche.pages.dev/shipping">Shipping Policy</a>
+    </p>
+    <p>200 Spectrum Drive, Irvine, CA 92618 &nbsp;&middot;&nbsp; <a href="tel:+12123811772">212-381-1772</a> &nbsp;&middot;&nbsp; <a href="mailto:info@raquelroche.com">info@raquelroche.com</a></p>
+  </footer>
 </body>
 </html>
