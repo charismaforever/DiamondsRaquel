@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Raquel Roche Diamonds — Fine diamond jewelry, engagement rings, and gold pieces for life's most important moments." />
+  <meta name="description" content="Raquel Roche Diamonds — Fine diamond jewelry, engagement rings, pearl jewelry, and gold pieces for life's most important moments." />
   <title>Raquel Roche Diamonds | Fine Diamond Jewelry</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
@@ -53,6 +53,11 @@
     .cat-title{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;color:var(--ivory);margin-bottom:0.5rem;}
     .cat-cta{font-size:0.58rem;letter-spacing:0.16em;text-transform:uppercase;color:rgba(201,169,110,0.6);}
 
+    .stat-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(201,169,110,0.08);margin-bottom:0;}
+    .stat{background:var(--black);padding:2.5rem 2rem;text-align:center;}
+    .stat-num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--gold);display:block;}
+    .stat-label{font-size:0.6rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--mist);margin-top:0.5rem;}
+
     .cta-band{border-top:1px solid rgba(201,169,110,0.1);border-bottom:1px solid rgba(201,169,110,0.1);padding:6rem 2rem;text-align:center;background:rgba(201,169,110,0.03);}
     .cta-band h2{margin-bottom:1rem;}
     .cta-band p{color:var(--mist);margin-bottom:2.5rem;font-size:1rem;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.85;}
@@ -62,7 +67,7 @@
     footer a{color:var(--gold);}
 
     @media(max-width:768px){
-      .features-grid,.cats-grid{grid-template-columns:1fr;}
+      .features-grid,.cats-grid,.stat-strip{grid-template-columns:1fr;}
       .hero-actions{flex-direction:column;align-items:center;}
     }
   </style>
@@ -74,6 +79,7 @@
       <div class="nav-links">
         <a href="https://gems-raquel-roche.pages.dev/shop">Shop All</a>
         <a href="https://gems-raquel-roche.pages.dev/shop?category=engagement-rings">Engagement</a>
+        <a href="https://gems-raquel-roche.pages.dev/shop?category=pearls">Pearls</a>
         <a href="https://gems-raquel-roche.pages.dev/shop?category=gold">Gold</a>
         <a href="https://gems-raquel-roche.pages.dev/journal">Journal</a>
       </div>
@@ -86,13 +92,33 @@
     <div class="hero-content">
       <p class="eyebrow">Raquel Roche Diamonds</p>
       <h1>The diamond<br/><em>standard.</em></h1>
-      <p class="hero-sub">Fine diamond jewelry crafted in solid gold. Engagement rings, necklaces, bracelets, and earrings — over 1,800 pieces in stock and ready to ship.</p>
+      <p class="hero-sub">Fine diamond jewelry crafted in solid gold. Engagement rings, pearl jewelry, eternity bands, and necklaces — 1,980 pieces in stock and ready to ship.</p>
       <div class="hero-actions">
         <a href="https://gems-raquel-roche.pages.dev/shop" class="btn btn-gold">Shop All Jewelry</a>
         <a href="https://gems-raquel-roche.pages.dev/shop?category=engagement-rings" class="btn btn-outline">Engagement Rings</a>
       </div>
     </div>
   </section>
+
+  <!-- Stats Strip -->
+  <div class="stat-strip">
+    <div class="stat">
+      <span class="stat-num">1,980</span>
+      <div class="stat-label">Pieces In Stock</div>
+    </div>
+    <div class="stat">
+      <span class="stat-num">360+</span>
+      <div class="stat-label">Engagement Styles</div>
+    </div>
+    <div class="stat">
+      <span class="stat-num">545+</span>
+      <div class="stat-label">Diamond Pieces</div>
+    </div>
+    <div class="stat">
+      <span class="stat-num">43</span>
+      <div class="stat-label">Pearl Jewelry</div>
+    </div>
+  </div>
 
   <section class="section">
     <div class="container">
@@ -105,7 +131,7 @@
         <div class="feature">
           <div class="feature-num">02</div>
           <h3>Conflict-Free Diamonds</h3>
-          <p>All diamonds are ethically sourced from certified suppliers. GIA and EGL certified stones available throughout the collection.</p>
+          <p>All diamonds are ethically sourced from certified suppliers. GIA and IGI certified lab-grown stones available throughout the collection.</p>
         </div>
         <div class="feature">
           <div class="feature-num">03</div>
@@ -122,33 +148,48 @@
       <h2>What are you looking for?</h2>
       <div class="cats-grid">
         <a href="https://gems-raquel-roche.pages.dev/shop?category=engagement-rings" class="cat-card">
-          <div class="cat-count">355+ styles</div>
+          <div class="cat-count">360+ styles</div>
           <div class="cat-title">Engagement Rings</div>
           <div class="cat-cta">Shop Now →</div>
         </a>
         <a href="https://gems-raquel-roche.pages.dev/shop?category=necklaces" class="cat-card">
-          <div class="cat-count">520+ styles</div>
+          <div class="cat-count">542+ styles</div>
           <div class="cat-title">Necklaces &amp; Chains</div>
           <div class="cat-cta">Shop Now →</div>
         </a>
         <a href="https://gems-raquel-roche.pages.dev/shop?category=bracelets" class="cat-card">
-          <div class="cat-count">637+ styles</div>
+          <div class="cat-count">643+ styles</div>
           <div class="cat-title">Bracelets</div>
           <div class="cat-cta">Shop Now →</div>
         </a>
         <a href="https://gems-raquel-roche.pages.dev/shop?category=earrings" class="cat-card">
-          <div class="cat-count">38+ styles</div>
+          <div class="cat-count">53+ styles</div>
           <div class="cat-title">Diamond Earrings</div>
           <div class="cat-cta">Shop Now →</div>
         </a>
         <a href="https://gems-raquel-roche.pages.dev/shop?category=bangles" class="cat-card">
-          <div class="cat-count">107+ styles</div>
+          <div class="cat-count">108+ styles</div>
           <div class="cat-title">Bangles</div>
           <div class="cat-cta">Shop Now →</div>
         </a>
         <a href="https://gems-raquel-roche.pages.dev/shop?category=pendants" class="cat-card">
-          <div class="cat-count">156+ styles</div>
+          <div class="cat-count">157+ styles</div>
           <div class="cat-title">Pendants</div>
+          <div class="cat-cta">Shop Now →</div>
+        </a>
+        <a href="https://gems-raquel-roche.pages.dev/shop?category=pearls" class="cat-card">
+          <div class="cat-count">43 styles</div>
+          <div class="cat-title">Pearl Jewelry</div>
+          <div class="cat-cta">Shop Now →</div>
+        </a>
+        <a href="https://gems-raquel-roche.pages.dev/shop?category=eternity-rings" class="cat-card">
+          <div class="cat-count">23 styles</div>
+          <div class="cat-title">Eternity Rings</div>
+          <div class="cat-cta">Shop Now →</div>
+        </a>
+        <a href="https://gems-raquel-roche.pages.dev/shop?category=gold" class="cat-card">
+          <div class="cat-count">1,000+ pieces</div>
+          <div class="cat-title">All Gold Jewelry</div>
           <div class="cat-cta">Shop Now →</div>
         </a>
       </div>
@@ -164,7 +205,7 @@
 
   <footer>
     <p>
-      &copy; 2025 Raquel Roche Boutique &nbsp;&middot;&nbsp;
+      &copy; 2026 Raquel Roche Boutique &nbsp;&middot;&nbsp;
       <a href="https://gems-raquel-roche.pages.dev/privacy-policy">Privacy Policy</a> &nbsp;&middot;&nbsp;
       <a href="https://gems-raquel-roche.pages.dev/terms">Terms &amp; Conditions</a> &nbsp;&middot;&nbsp;
       <a href="https://gems-raquel-roche.pages.dev/shipping">Shipping Policy</a>
